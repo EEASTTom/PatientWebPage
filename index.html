@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    
+  <header class="d-flex pb-1 mb-1 border-bottom">
+    <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+      <img class="bi m-3" height="70" src="logo.svg">
+    </a>
+  </header>
+
+<div class="border-bottom text-center pb-1 fs-6">
+	<p class="p-0 m-0">Incident Reported 18/02/2025 at 20:30</p>
+	<p class="p-0 m-0">Last Update 18/02/2025 at 21:30</p>
+    </div>
+  
+  <main class="container"> 
+    
+    <div class="text-center border-bottom pb-2 my-4 text-success">
+	<h1>You're waiting for a call back.</h1>
+	<h3>Average wait time: 3 hours.</h3>
+	<div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Expect a call from a Paramedic or Nurse, they have a few questions to get you the right help.</p>
+    </div>
+    </div>
+
+<h3 class="text-success-emphasis">Self Care Advice</h3>
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-2">
+      <div class="col d-flex align-items-start">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi text-body-secondary flex-shrink-0 me-2 bi bi-lightbulb" width="3em" viewBox="0 0 16 16">
+	  <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
+	</svg>
+        <div>
+          <h3 class="mb-0 fs-4 text-body-emphasis">Some advice here.</h3>
+          <p>With a description for the advice.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <hr class="col-2 my-4">
+    
+  <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" data-bs-toggle="collapse" href="#IncidentInformation" role="button" aria-expanded="false" aria-controls="collapseExample">
+    <h3 class="text-success-emphasis">Information</h3>
+  </a>
+    
+
+<div class="collapse show" id="IncidentInformation">
+    <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Current Priority: <span class="text-warning">Catergory 4</span></h6>
+              <small class="text-body-secondary">The current priority of which your call has been graded.</small>
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Delays for Priority: <span class="text-primary">7 Hours</span></h6>
+              <small class="text-body-secondary">Current response delays being advised for your priority.</small>
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">?? <small class="text-body-secondary">With faded secondary text</small></h6>
+              <small class="text-body-secondary">??</small>
+            </div>
+          </li>
+        </ul>
+</div>
+
+
+
+    <hr class="col-2 my-4">
+
+  <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" data-bs-toggle="collapse" href="#IncidentLog" role="button" aria-expanded="false" aria-controls="collapseExample">
+    <h3 class="text-success-emphasis">History</h3>
+  </a>
+    
+
+<div class="collapse" id="IncidentLog">
+<ul class="list-group list-group-flush">
+          <li class="list-group-item">
+ 	    <p class="mb-0 opacity-75">6 hours ago</p>
+	    <h6 class="mb-0">Incident Reported</h6>
+            <p class="mb-0 opacity-75">Your call has been taken or passed to one of our control rooms where we are organising help. </p>
+	  </li>
+          <li class="list-group-item">
+	    <p class="mb-0 opacity-75">5 hours ago</p>
+	    <h6 class="mb-0">Call Upgraded</h6>
+            <p class="mb-0 opacity-75">Your call has been marked as upgraded. This means we've made you a higher priority since first contact with us.</p>
+	  </li>
+          <li class="list-group-item">
+	    <p class="mb-0 opacity-75">4h ago</p>
+	    <h6 class="mb-0">Waiting Call Back</h6>
+            <p class="mb-0 opacity-75">We'll be calling you back soon as a Clinician is available.</p>
+	  </li>
+        </ul>
+</div>
+
+    <hr class="col-2 my-4">
+
+
+  <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" data-bs-toggle="collapse" href="#IncidentCancel" role="button" aria-expanded="false" aria-controls="collapseExample">
+    <h3 class="text-success-emphasis">Need to cancel?</h3>
+  </a>
+    
+<div class="collapse" id="IncidentCancel">
+    <p>If you no longer require a response from East of England Ambulance Serivce, you're able to cancel below.</p>
+    
+<form class="bg-secondary-subtle p-2 border border-danger-subtle rounded">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Reason for Cancellation?</label>
+    <select class="form-select" aria-label="Reason for Cancel">
+  	<option selected>Select Cancel Reason</option>
+ 	<option value="1">Making own way to Hospital</option>
+  	<option value="2">Made contact with other service</option>
+  	<option value="3">Feeling better</option>
+    </select>
+    <div id="emailHelp" class="form-text">We might contact you before cancelling, we'll let you know if your call has been cancelled.</div>
+  </div>
+  <div class="d-grid gap-2">
+  <button type="submit" class="btn btn-danger">Cancel the Ambulance</button>
+  </div>
+</form>
+</div>
+    <hr class="my-4">
+    <h3></h3>
+
+  </main>
+
+<div class="container">
+  <footer class="py-3 my-4 text-center">
+    <p class="text-center text-body-secondary">East of England Ambulance Service Trust</p>
+    <a class="text-center text-body-secondary" href="#">Website</a>
+  </footer>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
