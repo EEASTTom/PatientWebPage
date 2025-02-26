@@ -11,11 +11,12 @@
   </head>
   
   <body>
-	<div class="alert alert-warning text-center m-0 p-2" role="alert" style="font-weight: bold;">
+<div class="alert text-center m-0 p-2 bg-dark text-white border border-danger" role="alert" style="font-weight: bold;">
   🚨 This is a proof of concept and does not show real information. 🚨
 </div>
+
 	  <header class="d-flex pb-1 mb-1 border-bottom">
-	    <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+	    <a href="/" class="d-flex align-items-center">
 	      <img class="bi m-3" height="70" src="logo.svg">
 	    </a>
 	</header>
@@ -52,7 +53,7 @@
       					<div class="row row-cols-1 row-cols-md-2 g-4">
 					        <div class="col">
 					          <div class="card border-light shadow-sm">
-					            <div class="card-header bg-success text-white d-flex align-items-center rounded-3 px-3 py-2" data-bs-toggle="collapse" data-bs-target="#stayCalmMore" aria-expanded="false" aria-controls="stayCalmMore" style="cursor: pointer;">
+					            <div class="card-header bg-success text-white d-flex align-items-center rounded-3 px-2 py-1" data-bs-toggle="collapse" data-bs-target="#stayCalmMore" aria-expanded="false" aria-controls="stayCalmMore" style="cursor: pointer;">
 					              <i class="bi bi-heart-pulse" style="font-size: 1.5rem;"></i>
 					              <h6 class="mb-0 ms-3">Stay Calm</h6>
 					              <i class="bi bi-chevron-down ms-auto arrow" style="font-size: 1.5rem;"></i> <!-- Arrow Icon -->
@@ -67,7 +68,7 @@
 						
 					        <div class="col">
 					          <div class="card border-light shadow-sm">
-					            <div class="card-header bg-success text-white d-flex align-items-center rounded-3 px-3 py-2" data-bs-toggle="collapse" data-bs-target="#stayHydratedMore" aria-expanded="false" aria-controls="stayHydratedMore" style="cursor: pointer;">
+					            <div class="card-header bg-success text-white d-flex align-items-center rounded-3 px-2 py-1" data-bs-toggle="collapse" data-bs-target="#stayHydratedMore" aria-expanded="false" aria-controls="stayHydratedMore" style="cursor: pointer;">
 					              <i class="bi bi-droplet-fill" style="font-size: 1.5rem;"></i>
 					              <h6 class="mb-0 ms-3">Stay Hydrated</h6>
 					              <i class="bi bi-chevron-down ms-auto arrow" style="font-size: 1.5rem;"></i> <!-- Arrow Icon -->
@@ -82,7 +83,7 @@
 						
 					        <div class="col">
 					          <div class="card border-light shadow-sm">
-					            <div class="card-header bg-success text-white d-flex align-items-center rounded-3 px-3 py-2" data-bs-toggle="collapse" data-bs-target="#comfortablePositionMore" aria-expanded="false" aria-controls="comfortablePositionMore" style="cursor: pointer;">
+					            <div class="card-header bg-success text-white d-flex align-items-center rounded-3 px-2 py-1" data-bs-toggle="collapse" data-bs-target="#comfortablePositionMore" aria-expanded="false" aria-controls="comfortablePositionMore" style="cursor: pointer;">
 					              <i class="bi bi-person-fill" style="font-size: 1.5rem;"></i>
 					              <h6 class="mb-0 ms-3">Find a Comfortable Position</h6>
 					              <i class="bi bi-chevron-down ms-auto arrow" style="font-size: 1.5rem;"></i> <!-- Arrow Icon -->
@@ -210,8 +211,8 @@
 		
 		        <div class="d-grid">
 		          <button type="submit" class="btn btn-danger btn-lg">
-		            Cancel the Ambulance
-		          </button>
+  Request Cancellation
+</button>
 		        </div>
 		      </form>
 		    </div>
@@ -229,21 +230,21 @@
 </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script>
-  // When the collapse toggle is clicked, update the arrow
-  document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(function (element) {
-    element.addEventListener('click', function () {
-      var target = document.querySelector(this.getAttribute('data-bs-target'));
-      var arrow = this.querySelector('.arrow');
 
-      // Check if the target is shown or hidden and toggle the arrow
-      if (target.classList.contains('show')) {
-        arrow.classList.remove('bi-chevron-up');
-        arrow.classList.add('bi-chevron-down');
-      } else {
-        arrow.classList.remove('bi-chevron-down');
-        arrow.classList.add('bi-chevron-up');
-      }
+<script>
+  document.querySelectorAll('[data-bs-toggle="collapse"]').forEach((element) => {
+    let targetId = element.getAttribute('data-bs-target');
+    let target = document.querySelector(targetId);
+    let arrow = element.querySelector('.arrow');
+
+    target.addEventListener('shown.bs.collapse', function () {
+      arrow.classList.remove('bi-chevron-down');
+      arrow.classList.add('bi-chevron-up');
+    });
+
+    target.addEventListener('hidden.bs.collapse', function () {
+      arrow.classList.remove('bi-chevron-up');
+      arrow.classList.add('bi-chevron-down');
     });
   });
 </script>
