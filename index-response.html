@@ -9,234 +9,216 @@
     <meta name="theme-color" content="#198708">
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-    
-  <header class="d-flex pb-1 mb-1 border-bottom">
-    <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
-      <img class="bi m-3" height="70" src="logo.svg">
-    </a>
-  </header>
-
-<div class="border-bottom text-center pb-1 fs-6">
-	<p class="p-0 m-0">Incident Reported: <strong>18/02/2025 20:30</strong></p>
-</div>
-
   
-  <main class="container"> 
-
-<div class="alert alert-danger mt-4" role="alert">
-  <strong>Important:</strong> Due to high demand, the East of England Ambulance Service is experiencing delays. <strong>If your condition worsens, dial 999.</strong>
+  <body>
+	<div class="alert alert-warning text-center m-0 p-2" role="alert" style="font-weight: bold;">
+  🚨 This is a proof of concept and does not show real information. 🚨
 </div>
+	  <header class="d-flex pb-1 mb-1 border-bottom">
+	    <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+	      <img class="bi m-3" height="70" src="logo.svg">
+	    </a>
+	</header>
+	  
+	<div class="border-bottom text-center pb-1 fs-6">
+		<p class="p-0 m-0">Incident Reported: <strong>18/02/2025 20:30</strong></p>
+	</div>
+	  
+  	<main class="container"> 
+		<div class="alert alert-danger mt-4" role="alert">
+		  <strong>Important:</strong> Due to high demand, the East of England Ambulance Service is experiencing delays. <strong>If your condition worsens, dial 999.</strong>
+		</div>
 
 
-  <div class="card text-center border-danger shadow-sm my-3">
-  	  <div class="card-header bg-danger text-white">
-    		<h4 class="mb-0">Waiting for an Ambulance</h4>
-  	  </div>
-  	  <div class="card-body">
-    		<h5 class="text-danger"><strong>Estimated Wait Time: 1 Hour</strong></h5>
-    		<p class="lead">An ambulance will be with you as soon as one is available.</p>
-    
-    		<div class="d-flex justify-content-center align-items-center gap-3">
-      		<span class="badge bg-warning text-dark">Catergory 3</span>
-      <span class="badge bg-secondary">Last Updated: 21:30</span>
-    </div>
-  </div>
-</div>
+		<div class="card text-center border-danger shadow-sm my-3">
+  	  		<div class="card-header bg-danger text-white"><h4 class="mb-0">Waiting for an Ambulance</h4></div>
+  	  		<div class="card-body">
+    				<h5 class="text-danger"><strong>Estimated Wait Time: 1 Hour</strong></h5>
+    				<p class="lead">An ambulance will be with you as soon as one is available.</p>
+    				<div class="d-flex justify-content-center align-items-center gap-3">
+	      				<span class="badge bg-warning text-dark">Catergory 3</span>
+	     				 <span class="badge bg-secondary">Last Updated: 21:30</span>
+	    			</div>
+  			</div>
+		</div>
 
-<div class="mt-4">
-  <!-- Self-Care Section Title -->
-  <div class="card border-success">
-    <div class="card-header bg-success">
-      <h5 class="mb-0 text-center text-white">
-        Self-Care Advice
-      </h5>
-    </div>
+		<div class="mt-4">
+  			<div class="card border-success">
+    				<div class="card-header bg-success">
+     					<h5 class="mb-0 text-center text-white">Self-Care Advice</h5>
+				</div>
 
-    <div class="card-body">
-      <div class="row row-cols-1 row-cols-md-2 g-4">
+    				<div class="card-body">
+      					<div class="row row-cols-1 row-cols-md-2 g-4">
+					        <div class="col">
+					          <div class="card border-light shadow-sm">
+					            <div class="card-header bg-success text-white d-flex align-items-center rounded-3 px-3 py-2" data-bs-toggle="collapse" data-bs-target="#stayCalmMore" aria-expanded="false" aria-controls="stayCalmMore" style="cursor: pointer;">
+					              <i class="bi bi-heart-pulse" style="font-size: 1.5rem;"></i>
+					              <h6 class="mb-0 ms-3">Stay Calm</h6>
+					              <i class="bi bi-chevron-down ms-auto arrow" style="font-size: 1.5rem;"></i> <!-- Arrow Icon -->
+					            </div>
+					            <div id="stayCalmMore" class="collapse">
+					              <div class="card-body">
+					                <p class="card-text">Try to stay calm. Anxiety can make symptoms feel worse, so focus on your breathing. Take deep breaths and try to relax your mind. If you feel light-headed or dizzy, sit down and rest.</p>
+					              </div>
+					            </div>
+					          </div>
+					        </div>
+						
+					        <div class="col">
+					          <div class="card border-light shadow-sm">
+					            <div class="card-header bg-success text-white d-flex align-items-center rounded-3 px-3 py-2" data-bs-toggle="collapse" data-bs-target="#stayHydratedMore" aria-expanded="false" aria-controls="stayHydratedMore" style="cursor: pointer;">
+					              <i class="bi bi-droplet-fill" style="font-size: 1.5rem;"></i>
+					              <h6 class="mb-0 ms-3">Stay Hydrated</h6>
+					              <i class="bi bi-chevron-down ms-auto arrow" style="font-size: 1.5rem;"></i> <!-- Arrow Icon -->
+					            </div>
+					            <div id="stayHydratedMore" class="collapse">
+					              <div class="card-body">
+					                <p class="card-text">Sip water regularly. Staying hydrated is important to help your body cope. Avoid drinking too much at once. Small sips will prevent discomfort and help hydrate you better.</p>
+					              </div>
+					            </div>
+					          </div>
+					        </div>
+						
+					        <div class="col">
+					          <div class="card border-light shadow-sm">
+					            <div class="card-header bg-success text-white d-flex align-items-center rounded-3 px-3 py-2" data-bs-toggle="collapse" data-bs-target="#comfortablePositionMore" aria-expanded="false" aria-controls="comfortablePositionMore" style="cursor: pointer;">
+					              <i class="bi bi-person-fill" style="font-size: 1.5rem;"></i>
+					              <h6 class="mb-0 ms-3">Find a Comfortable Position</h6>
+					              <i class="bi bi-chevron-down ms-auto arrow" style="font-size: 1.5rem;"></i> <!-- Arrow Icon -->
+					            </div>
+					            <div id="comfortablePositionMore" class="collapse">
+					              <div class="card-body">
+					                <p class="card-text">Sit upright if you feel breathless, and avoid lying down to help your breathing. Try sitting with your back straight and leaning slightly forward if possible. It will make breathing easier.</p>
+					              </div>
+					            </div>
+					          </div>
+					        </div>
+      					</div>
+    				</div>
+  			</div>
+		</div>
 
-        <!-- Stay Calm Advice Card -->
-        <div class="col">
-          <div class="card border-light shadow-sm">
-            <div class="card-header bg-success text-white d-flex align-items-center rounded-3 px-3 py-2" data-bs-toggle="collapse" data-bs-target="#stayCalmMore" aria-expanded="false" aria-controls="stayCalmMore" style="cursor: pointer;">
-              <i class="bi bi-heart-pulse" style="font-size: 1.5rem;"></i>
-              <h6 class="mb-0 ms-3">Stay Calm</h6>
-              <i class="bi bi-chevron-down ms-auto arrow" style="font-size: 1.5rem;"></i> <!-- Arrow Icon -->
-            </div>
-            <div id="stayCalmMore" class="collapse">
-              <div class="card-body">
-                <p class="card-text">Try to stay calm. Anxiety can make symptoms feel worse, so focus on your breathing. Take deep breaths and try to relax your mind. If you feel light-headed or dizzy, sit down and rest.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Stay Hydrated Advice Card -->
-        <div class="col">
-          <div class="card border-light shadow-sm">
-            <div class="card-header bg-success text-white d-flex align-items-center rounded-3 px-3 py-2" data-bs-toggle="collapse" data-bs-target="#stayHydratedMore" aria-expanded="false" aria-controls="stayHydratedMore" style="cursor: pointer;">
-              <i class="bi bi-droplet-fill" style="font-size: 1.5rem;"></i>
-              <h6 class="mb-0 ms-3">Stay Hydrated</h6>
-              <i class="bi bi-chevron-down ms-auto arrow" style="font-size: 1.5rem;"></i> <!-- Arrow Icon -->
-            </div>
-            <div id="stayHydratedMore" class="collapse">
-              <div class="card-body">
-                <p class="card-text">Sip water regularly. Staying hydrated is important to help your body cope. Avoid drinking too much at once. Small sips will prevent discomfort and help hydrate you better.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Find Comfortable Position Advice Card -->
-        <div class="col">
-          <div class="card border-light shadow-sm">
-            <div class="card-header bg-success text-white d-flex align-items-center rounded-3 px-3 py-2" data-bs-toggle="collapse" data-bs-target="#comfortablePositionMore" aria-expanded="false" aria-controls="comfortablePositionMore" style="cursor: pointer;">
-              <i class="bi bi-person-fill" style="font-size: 1.5rem;"></i>
-              <h6 class="mb-0 ms-3">Find a Comfortable Position</h6>
-              <i class="bi bi-chevron-down ms-auto arrow" style="font-size: 1.5rem;"></i> <!-- Arrow Icon -->
-            </div>
-            <div id="comfortablePositionMore" class="collapse">
-              <div class="card-body">
-                <p class="card-text">Sit upright if you feel breathless, and avoid lying down to help your breathing. Try sitting with your back straight and leaning slightly forward if possible. It will make breathing easier.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div> <!-- End of row -->
-    </div>
-  </div>
-</div>
-
-
-
-
-<!-- Patient Information & Timeline Section (Collapsible with NHS Blue Header and Border) -->
-<div class="card mt-4" style="border-color: #005EB8;">
-  <div class="card-header" style="background-color: #005EB8; border-color: #005EB8;">
-    <h5 class="mb-0 text-center">
-      <a class="text-white text-decoration-none" data-bs-toggle="collapse" href="#patientInfoTimeline" role="button" aria-expanded="true" aria-controls="patientInfoTimeline">
-        Information
-      </a>
-    </h5>
-  </div>
-  <div id="patientInfoTimeline" class="collapse show">
-    <div class="card-body" style="border-top: 1px solid #005EB8;">
-      <ul class="list-group">
-        <!-- Patient Category -->
-        <li class="list-group-item d-flex justify-content-between">
-          <div>
-            <strong>Category:</strong>
-          </div>
-          <span class="badge bg-warning text-dark">Category 4</span>
-        </li>
-
-        <!-- Time of Call -->
-        <li class="list-group-item d-flex justify-content-between">
-          <div>
-            <strong>Call Time:</strong>
-          </div>
-          <span>18/02/2025 20:30</span>
-        </li>
-
-        <!-- Last Update Time -->
-        <li class="list-group-item d-flex justify-content-between">
-          <div>
-            <strong>Last Update:</strong>
-          </div>
-          <span>18/02/2025 21:30</span>
-        </li>
-
-        <!-- Estimated Wait Time -->
-        <li class="list-group-item d-flex justify-content-between">
-          <div>
-            <strong>Estimated Wait:</strong>
-          </div>
-          <span>1 hour</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-
-<!-- Incident History Card - Collapsed by Default (NHS Blue Styling) -->
-<div class="card mt-4" style="border-color: #005EB8;">
-  <div class="card-header text-center" style="background-color: #005EB8; border-color: #005EB8;">
-    <h5 class="mb-0">
-      <a class="text-white text-decoration-none" data-bs-toggle="collapse" href="#incidentHistoryCollapse" role="button" aria-expanded="true" aria-controls="incidentHistoryCollapse">
-        History
-      </a>
-    </h5>
-  </div>
-  <div id="incidentHistoryCollapse" class="collapse">
-    <div class="card-body" style="border-top: 1px solid #005EB8;">
-      <ul class="list-group">
-        <!-- History Item 1 -->
-        <li class="list-group-item">
-          <p class="mb-0 opacity-75">6 hours ago</p>
-          <h6 class="mb-0">Incident Reported</h6>
-          <p class="mb-0 opacity-75">Your call has been taken or passed to one of our control rooms where we are organising help.</p>
-        </li>
-        <!-- History Item 2 -->
-        <li class="list-group-item">
-          <p class="mb-0 opacity-75">5 hours ago</p>
-          <h6 class="mb-0">Call Upgraded</h6>
-          <p class="mb-0 opacity-75">Your call has been marked as upgraded. This means we've made you a higher priority since first contact with us.</p>
-        </li>
-        <!-- History Item 3 -->
-        <li class="list-group-item">
-          <p class="mb-0 opacity-75">4 hours ago</p>
-          <h6 class="mb-0">Waiting Call Back</h6>
-          <p class="mb-0 opacity-75">We'll be calling you back soon as a Clinician is available.</p>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+		<div class="card mt-4" style="border-color: #005EB8;">
+		  <div class="card-header" style="background-color: #005EB8; border-color: #005EB8;">
+		    <h5 class="mb-0 text-center">
+		      <a class="text-white text-decoration-none" data-bs-toggle="collapse" href="#patientInfoTimeline" role="button" aria-expanded="true" aria-controls="patientInfoTimeline">
+		        Information
+		      </a>
+		    </h5>
+		  </div>
+		  <div id="patientInfoTimeline" class="collapse">
+		    <div class="card-body" style="border-top: 1px solid #005EB8;">
+		      <ul class="list-group">
+		        <!-- Patient Category -->
+		        <li class="list-group-item d-flex justify-content-between">
+		          <div>
+		            <strong>Category:</strong>
+		          </div>
+		          <span class="badge bg-warning text-dark">Category 4</span>
+		        </li>
+		
+		        <!-- Time of Call -->
+		        <li class="list-group-item d-flex justify-content-between">
+		          <div>
+		            <strong>Call Time:</strong>
+		          </div>
+		          <span>18/02/2025 20:30</span>
+		        </li>
+		
+		        <!-- Last Update Time -->
+		        <li class="list-group-item d-flex justify-content-between">
+		          <div>
+		            <strong>Last Update:</strong>
+		          </div>
+		          <span>18/02/2025 21:30</span>
+		        </li>
+		
+		        <!-- Estimated Wait Time -->
+		        <li class="list-group-item d-flex justify-content-between">
+		          <div>
+		            <strong>Estimated Wait:</strong>
+		          </div>
+		          <span>1 hour</span>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+		</div>
+		
+		<div class="card mt-4" style="border-color: #005EB8;">
+		  <div class="card-header text-center" style="background-color: #005EB8; border-color: #005EB8;">
+		    <h5 class="mb-0">
+		      <a class="text-white text-decoration-none" data-bs-toggle="collapse" href="#incidentHistoryCollapse" role="button" aria-expanded="true" aria-controls="incidentHistoryCollapse">
+		        History
+		      </a>
+		    </h5>
+		  </div>
+		  <div id="incidentHistoryCollapse" class="collapse">
+		    <div class="card-body" style="border-top: 1px solid #005EB8;">
+		      <ul class="list-group">
+		        <!-- History Item 1 -->
+		        <li class="list-group-item">
+		          <p class="mb-0 opacity-75">6 hours ago</p>
+		          <h6 class="mb-0">Incident Reported</h6>
+		          <p class="mb-0 opacity-75">Your call has been taken or passed to one of our control rooms where we are organising help.</p>
+		        </li>
+		        <!-- History Item 2 -->
+		        <li class="list-group-item">
+		          <p class="mb-0 opacity-75">5 hours ago</p>
+		          <h6 class="mb-0">Call Upgraded</h6>
+		          <p class="mb-0 opacity-75">Your call has been marked as upgraded. This means we've made you a higher priority since first contact with us.</p>
+		        </li>
+		        <!-- History Item 3 -->
+		        <li class="list-group-item">
+		          <p class="mb-0 opacity-75">4 hours ago</p>
+		          <h6 class="mb-0">Waiting Call Back</h6>
+		          <p class="mb-0 opacity-75">We'll be calling you back soon as a Clinician is available.</p>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+		</div>
 
 
-<div class="card border-danger shadow-sm mt-4">
-  <div class="card-header bg-danger text-white text-center" 
-       data-bs-toggle="collapse" href="#IncidentCancel" role="button" 
-       aria-expanded="false" aria-controls="IncidentCancel">
-    <h4 class="mb-0">Need to Cancel?</h4>
-  </div>
-  <div class="collapse" id="IncidentCancel">
-    <div class="card-body">
-      <p class="lead text-center">
-        If you no longer need an ambulance, you can request cancellation below.
-      </p>
+		<div class="card border-danger shadow-sm mt-4">
+		  <div class="card-header bg-danger text-white text-center" 
+		       data-bs-toggle="collapse" href="#IncidentCancel" role="button" 
+		       aria-expanded="false" aria-controls="IncidentCancel">
+		    <h4 class="mb-0">Need to Cancel?</h4>
+		  </div>
+		  <div class="collapse" id="IncidentCancel">
+		    <div class="card-body">
+		      <p class="lead text-center">
+		        If you no longer need an ambulance, you can request cancellation below.
+		      </p>
+		
+		      <div class="alert alert-warning text-center" role="alert">
+		        <strong>Important:</strong> We may contact you before confirming your cancellation.
+		      </div>
+		
+		      <form class="bg-light p-3 border rounded">
+		        <div class="mb-3">
+		          <label for="cancelReason" class="form-label"><strong>Reason for Cancellation</strong></label>
+		          <select class="form-select" id="cancelReason">
+		            <option selected>Select a Reason</option>
+		            <option value="1">Making own way to hospital</option>
+		            <option value="2">Received help from another service</option>
+		            <option value="3">Feeling better, no longer need assistance</option>
+		          </select>
+		        </div>
+		
+		        <div class="d-grid">
+		          <button type="submit" class="btn btn-danger btn-lg">
+		            Cancel the Ambulance
+		          </button>
+		        </div>
+		      </form>
+		    </div>
+		  </div>
+		</div>
 
-      <div class="alert alert-warning text-center" role="alert">
-        <strong>Important:</strong> We may contact you before confirming your cancellation.
-      </div>
-
-      <form class="bg-light p-3 border rounded">
-        <div class="mb-3">
-          <label for="cancelReason" class="form-label"><strong>Reason for Cancellation</strong></label>
-          <select class="form-select" id="cancelReason">
-            <option selected>Select a Reason</option>
-            <option value="1">Making own way to hospital</option>
-            <option value="2">Received help from another service</option>
-            <option value="3">Feeling better, no longer need assistance</option>
-          </select>
-        </div>
-
-        <div class="d-grid">
-          <button type="submit" class="btn btn-danger btn-lg">
-            Cancel the Ambulance
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
-    <hr class="my-4">
-    <h3></h3>
-
+    		<hr class="my-4">
   </main>
 
 <div class="container">
